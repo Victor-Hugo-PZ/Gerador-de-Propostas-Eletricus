@@ -1,0 +1,5 @@
+{
+  "name": "|Gerador de Propostas Eletricus|",
+  "description": "Gera propostas comerciais automatizadas para a Eletricus com base em informações do cliente.",
+  "requestFramePermissions": []
+}

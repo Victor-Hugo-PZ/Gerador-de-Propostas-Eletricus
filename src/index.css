@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --color-gray-950: #030712;
+
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+  --color-slate-950: #020617;
+
+  --color-brand-50: #fdf8f3;
+  --color-brand-100: #faebd9;
+  --color-brand-200: #f3d1b0;
+  --color-brand-300: #ebb07e;
+  --color-brand-400: #e28a4c;
+  --color-brand-500: #d37311;
+  --color-brand-600: #b55b0d;
+  --color-brand-700: #96450f;
+  --color-brand-800: #783710;
+  --color-brand-900: #602e10;
+  --color-brand-950: #341506;
+
+  --shadow-color: #0000001a;
+  --shadow-sm: 0 1px 2px 0 rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0,0,0,0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0,0,0,0.05);
+}
+
+/* PDF Page Break Rules */
+.pdf-content h1, 
+.pdf-content h2, 
+.pdf-content h3 {
+  page-break-after: avoid;
+  break-after: avoid;
+  margin-top: 1.5rem !important;
+}
+
+.pdf-content p, 
+.pdf-content li, 
+.pdf-content blockquote {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.pdf-content img {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.pdf-content table {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.pdf-content tr {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
